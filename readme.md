@@ -22,5 +22,5 @@ Affandi.with(context).paint(imageUrl).into(imageView);
 
 ![affandi painting](raw/affandi-wisdom-of-the-east.jpg)
 
-Affandi (1907 – 23 May 1990) is an artist which famous for its expresionist paintings.
+[Affandi](https://en.wikipedia.org/wiki/Affandi) (1907 – 23 May 1990) is an artist which famous for its expresionist paintings.
 
