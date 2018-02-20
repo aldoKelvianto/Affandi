@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Affandi</string>
+    <string name="action_settings">Settings</string>
+    <string name="single_image">Single Image</string>
+    <string name="image_list">Image List</string>
+    <string name="five_image">Five Image (Caching)</string>
+    <string name="five_random_image">Five Random Image</string>
+</resources>
