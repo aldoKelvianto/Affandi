@@ -18,7 +18,7 @@ String imageUrl = "http://lorempixel.com/400/200/";
 Affandi.with(context).paint(imageUrl).into(imageView);
 ```
 
-###Trivia:
+### Trivia:
 
 ![affandi painting](raw/affandi-wisdom-of-the-east.jpg)
 
