@@ -7,6 +7,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.aldoapps.affandi.sample.R;
+import com.aldoapps.affandi.sample.SampleApplication;
 import com.aldoapps.affandi.sample.repository.ImagesRepository;
 
 import java.util.Arrays;
@@ -28,5 +29,11 @@ public class ImageListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, gridCount));
         ImageListAdapter adapter = new ImageListAdapter(Arrays.asList(ImagesRepository.imageUrls));
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SampleApplication.watchReference(this);
     }
 }

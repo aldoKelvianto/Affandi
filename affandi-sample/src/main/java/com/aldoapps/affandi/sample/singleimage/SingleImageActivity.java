@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.aldoapps.affandi.Affandi;
 import com.aldoapps.affandi.sample.R;
+import com.aldoapps.affandi.sample.SampleApplication;
 
 public class SingleImageActivity extends AppCompatActivity {
 
@@ -25,4 +26,9 @@ public class SingleImageActivity extends AppCompatActivity {
         Affandi.with(this).paint(imageUrl).into(imageView);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SampleApplication.watchReference(this);
+    }
 }

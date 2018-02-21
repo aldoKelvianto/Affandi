@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.aldoapps.affandi.Affandi;
 import com.aldoapps.affandi.sample.R;
+import com.aldoapps.affandi.sample.SampleApplication;
 import com.aldoapps.affandi.sample.databinding.ActivityFiveImageBinding;
 import com.aldoapps.affandi.sample.repository.ImagesRepository;
 
@@ -37,4 +38,9 @@ public class FiveImageActivity extends AppCompatActivity {
         Affandi.with(this).paint(ImagesRepository.numberedImage+"5").into(binding.imageView5);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SampleApplication.watchReference(this);
+    }
 }

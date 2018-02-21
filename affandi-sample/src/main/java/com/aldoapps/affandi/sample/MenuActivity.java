@@ -44,4 +44,10 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, clazz);
         startActivity(intent);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SampleApplication.watchReference(this);
+    }
 }

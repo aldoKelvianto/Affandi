@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.aldoapps.affandi.Affandi;
 import com.aldoapps.affandi.sample.R;
+import com.aldoapps.affandi.sample.SampleApplication;
 import com.aldoapps.affandi.sample.databinding.ActivityFiveImageBinding;
 import com.aldoapps.affandi.sample.repository.ImagesRepository;
 
@@ -40,5 +41,11 @@ public class FiveRandomImageActivity extends AppCompatActivity {
     private int getRandomInt() {
         Random random = new Random(SystemClock.elapsedRealtimeNanos());
         return random.nextInt(ImagesRepository.imageThumbUrls.length - 1);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SampleApplication.watchReference(this);
     }
 }
