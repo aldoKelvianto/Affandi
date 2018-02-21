@@ -11,9 +11,9 @@ class ThreadPoolFactory {
 
     private static ThreadPoolFactory INSTANCE;
 
-    private static final int AVAILABLE_PROCESSORS = Runtime.getRuntime().availableProcessors();
+    private final int AVAILABLE_PROCESSORS = Runtime.getRuntime().availableProcessors();
 
-    private static final long KEEP_ALIVE_TIME = 60L;
+    private final long KEEP_ALIVE_TIME = 60L;
 
     private ThreadPoolFactory() {
     }
