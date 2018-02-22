@@ -1,4 +1,6 @@
-Affandi is an experimental Image Loading and Caching library. You can use this library to load an image using its URL to an `ImageView`. 
+![CI Build](https://api.travis-ci.org/aldoKelvianto/Affandi.png)
+
+Affandi is an experimental Image Loading and Caching library. You can use this library to load an image using its URL to an `ImageView`.
 
 ![demo](raw/demo.png)
 

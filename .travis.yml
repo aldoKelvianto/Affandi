@@ -1,0 +1,13 @@
+language: android
+jdk: oraclejdk8
+sudo: true
+android:
+  components:
+    - tools
+    - tools
+    - platform-tools
+    - build-tools-27.0.3
+    - android-27
+before_install:
+  - yes | sdkmanager "platforms;android-27"
+script: ./gradlew clean lint test build
