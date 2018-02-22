@@ -1,5 +1,3 @@
-### (In Development)
-
 Affandi is an experimental Image Loading and Caching library. You can use this library to load an image using its URL to an `ImageView`. 
 
 ![demo](raw/demo.png)
@@ -17,6 +15,8 @@ Affandi is an experimental Image Loading and Caching library. You can use this l
 String imageUrl = "http://lorempixel.com/400/200/";
 Affandi.with(context).paint(imageUrl).into(imageView);
 ```
+
+You can use any `context` (application context, activity context, base context)
 
 ### Trivia:
 
